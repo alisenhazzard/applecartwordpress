@@ -1,0 +1,593 @@
+/*
+Theme Name: The Applecart Project
+Theme URI: http://localhost/TheApplecartProject/
+Description: A custom WordPress site for Alisen Hazzard
+Author: Alisen Hazzard
+Author URI: http://theapplecartproject.com
+Version: 1.0
+Tags: clean, light, responsive
+
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+* {
+	letter-spacing: 1px;
+	margin: 0;
+}
+body {
+	height: 100%;
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+p {
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 1.5em;
+	margin: 15px 0;
+}
+ul{
+	padding: 0;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	text-align: center;
+}
+h3 a{
+	color: #5DB63C;
+	-webkit-transition: .2s ease-in-out;
+}
+h3 a:hover {
+	color: #000;
+	-webkit-transition: .2s ease-in-out;
+}
+h5 {
+	border-bottom: 1px solid #5DB63C;
+	color: #5DB63C;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+/**************************************
+		GLOBAL STYLES
+**************************************/
+.banner {
+	background-position: top;
+}
+.banner-wrapper {
+	background-image: url("http://localhost/TheApplecartProject/wp-content/uploads/2014/09/tilden.jpg");
+	background-repeat: repeat-x repeat-y;
+	background-size: cover;
+	margin-bottom: 40px;
+	min-height: 8em;
+}
+.cat-wrapper {
+	margin-bottom: 40px;
+}
+.continue-reading {
+	font-size: .9em;
+	text-align: left;
+}
+.excerpt {
+	margin-bottom: 50px;
+}
+.green {
+	color: #5DB63C;
+}
+.home-banner {
+	background-position: center;
+}
+.info {
+	font-family: sans-serif;
+	line-height: 2em;
+	padding-top: 20px;
+}
+.info li {
+	list-style: none;
+}
+.clearfix {
+	clear: both;
+}
+.copyright {
+	font-size: .8em;
+	font-style: italic;
+}
+.content-wrapper {
+	min-height: 100%;
+}
+.post-link {
+	color: #5DB63C;
+}
+.strong {
+	line-height: 0;
+}
+.aligncenter,
+.blog-image {
+	display: table;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.title {
+	margin: 0 auto;
+}
+
+/**************************************
+		BLOG STYLES content-post.php
+**************************************/
+.blog-head-wrap {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.blogpost {
+	margin: 0 10px;
+}
+.btn {
+	border-radius: 20px;
+	font-size: .8em;
+	padding: 10px;
+	-webkit-transition: .2s ease-in-out;
+}
+.btn:hover {
+	opacity: .8;
+	-webkit-transition: .2s ease-in-out;
+}
+.inner-list{
+	padding-left: 25px;
+}
+#menu-main-menu {
+	background: rgba(255,255,255,0.4);
+	display: table;
+	margin: 5px auto 0 auto;
+	text-align: center;
+	width: 100%;
+}
+#menu-main-menu li{
+	display: inline-block;
+	font-family: sans-serif;
+	list-style: none;
+	margin: 10px;
+	padding: 6px;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-transition: .2s ease-in-out;	
+}
+.page-tagline {
+	letter-spacing: 0;
+	margin: 0;
+	padding-bottom: 20px;
+	text-align: center;
+	font-variant: small-caps;
+}
+.page-title {
+	padding-top: 50px;
+	text-align: center;
+}
+
+/**************************************
+		HOME PAGE (front-page.php)
+**************************************/
+.featured-project {
+	display: table;
+	margin: 0 auto; 
+	max-width: 360px;
+}
+.home-wrapper {
+	display: table;
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 860px;
+}
+.recent-post {
+	display: table;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+/**************************************
+		ABOUT PAGE
+**************************************/
+.about-image {
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+/**************************************
+			FOOTER
+**************************************/
+.copyright {
+	margin: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+footer {
+	background: #f0f0f0;
+	margin-top: 50px;
+}
+footer a {
+	-webkit-transition: .2s ease-in-out;
+}
+footer a:hover {
+	color: #5DB63C;
+	-webkit-transition: .2s ease-in-out;
+}
+footer li {
+	font-family: sans-serif;
+	font-weight: 100;
+}
+footer li a{
+	color: initial;
+}
+.footer-wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.footer_left,
+.footer_right {
+	display: none;
+}
+.footer_middle ul{
+	list-style: none;	
+}
+.footer_middle {
+	font-size: 1.2em;
+	margin: 1.6%;
+	padding: 10px 0;
+	text-align: center;
+}
+
+/**************************************
+		WORK STYLES (work.php)
+**************************************/
+.post-wrapper {
+	margin: 40px 10px;
+}
+.project {
+	display: table;
+	max-width: 400px;
+	margin: 20px auto;
+}
+.project_images img {
+	padding: 0;
+	width: 95%;
+	height: 95%;
+	border: 1px solid #aaa;
+}
+
+/* =========================================================================
+ *
+ * FROM THE APPLECART PROJECT WEBSITE 
+ * 
+ * ========================================================================= */
+
+
+/* CLASSES */
+.blog-code {
+	background: #272822;
+	border: 1px solid #000;
+	color: #fff;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+}
+.blog-image {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 50px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.blog-page {
+	color: #000;
+	font-size: 2em;
+	margin-left: 15px;
+	text-align: left;
+}
+.post-title {
+	padding-top: 6%;
+    text-align: center;
+}
+.current-page {
+	color: #000;
+	font-size: 2em;
+	padding-top: 2%;
+	text-align: center;
+}
+.float {
+	margin: 0 20px;
+}
+.home-title {
+	text-align: center;
+}
+.med {
+	max-width: 425px;
+}
+.post-content {
+	font-weight: 100;
+	line-height: 1.5em;
+	margin: 20px 10px;
+	max-width: 750px;
+}
+.post-content a,
+.about-text a,
+.about-text2 a{
+	color: #5DB63C;
+	-webkit-transition: .2s ease-in-out;
+}
+.post-content a:hover,
+.about-text a:hover,
+.about-text2 a:hover{
+	color: #000;
+	-webkit-transition: .2s ease-in-out;
+}
+.post-content li{
+	font-size: 20px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.post-desc {
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 700px;
+	width: 100%;
+}
+.post-image {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 50px auto;
+	max-width: 700px;
+	width: 100%;
+}
+.post-script {
+	font-size: .8em;
+}
+.post-title {
+	margin: auto;
+	max-width: 750px;
+	padding: 0 12%;
+	padding-top: 12%;
+}
+.profile-image {
+	display: block;
+	max-width: 250px;
+	margin: 30px auto 30px;
+}
+.round-image {
+	border-radius: 20px;
+	height: 300px;
+}
+.sm {
+	max-width: 280px;
+}
+
+/* COLUMN ALBUM POST */
+.col-left,
+.col-right {
+	float: left;
+	width: 50%;
+}
+.col-img {
+	display: table;
+	margin: 20px 10px;
+	max-width: 170px;
+}
+.col-wrapper {
+	display: table;
+	margin: 20px auto;
+	max-width: 810px;
+}
+.brick {
+	color: #E18728;
+}
+.code {
+	color: #A09844;
+	display: table;
+	font-size: 20px;
+	margin: 20px auto;
+	max-width: 600px;
+	width: 90%;
+}
+.code p {
+	margin: 0;
+}
+.blue {
+	background-color: #23ABB6;
+	color: #fff;
+	height: 20px;
+	letter-spacing: 2px;
+	width: 100%;
+}
+.teal {
+	color: #51Ab95;
+}
+.slate {
+	background-color: #222;
+	padding: 10px 0 10px 10px;
+	width: 100%;
+}
+
+/***************************************************
+			MEDIA QUERIES
+***************************************************/
+@media screen and (min-width: 700px){
+	h3 {
+		text-align: center;
+	}
+	h3 {
+		padding: 0;
+	}
+
+	/* CLASSES */
+	.about-header {
+		margin-top: 0;
+		text-align: center;
+	}
+	.blog-page,
+	.current-page {
+		text-align: center;
+		margin-left: 0;
+	}
+	.home-banner {
+		min-height: 16em;
+	}
+	.page-tagline {
+		padding-bottom: 60px;
+	}
+	.home-title {
+		h2 {
+			text-align: center;
+		}
+	}
+	.new-post2 {
+		display: table;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	.post-content {
+		margin: 20px auto;
+	}
+}
+
+@media screen and (min-width: 810px) {
+	.featured-project {
+		margin-left: 30px;
+	}
+	.recent-post {
+		float: left;
+	}
+	.featured-project {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.left-heading {
+		width: 750px;
+		margin: 0 auto;
+		display: table;
+	}
+	.left-heading h2 {
+		text-align: left;
+		padding: 0;
+	}
+	.featured-project {
+		margin-left: 70px;
+	}
+	.page-title {
+		font-size: 3.5em;
+		padding: 60px 0 10px 0;
+		text-align: center;
+	}
+	.page-tagline {
+		font-size: 2em;
+	}
+	#menu-main-menu{
+	    background: none;
+	    box-shadow: none;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: initial;
+	}
+	#menu-main-menu li {
+		-webkit-transition: .2s ease-in-out;
+	}
+	#menu-main-menu li:hover{
+		color: #5DB63C;
+		-webkit-transition: .2s ease-in-out;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.project {
+		float: left;
+		margin: 0 10px;
+	}
+}
+
+@media screen and (min-width: 870px) {
+	.footer_left,
+	.footer_right,
+	.footer_middle {
+		display: block;
+		font-size: 1.2em;
+		margin: 1.6%;
+		padding: 10px 0;
+		float: left;
+		width: 30%;
+		text-align: center;
+	}
+	.footer_left ul,
+	.footer_right ul,
+	.footer_middle ul {
+		list-style: none;	
+	}
+}
+
+@media screen and (min-width: 960px) {
+	/*CLASSES */
+	.about-image {
+		margin-right: 5%;
+		width: 300px;
+	}
+	.blogpost,
+	.post-wrapper {
+		margin: 0 auto;
+		max-width: 860px;
+	}
+	.float {
+		float: left;
+		margin: 0;
+		width: 45%;
+	}
+	.home-banner .page-title {
+		font-size: 3em;
+		padding-top: 80px;
+	}
+	.project {
+		margin: 0 15px;
+	}
+}	
+
+/****************************************	
+		SYNTAX HIGHLIGHTER
+****************************************/		
+.syntaxhighlighter {
+	padding: 10px;
+	margin: 3em auto !important;
+	max-width: 800px;
+}
+
+/****************************************	
+		TWIGET WIDGET
+****************************************/
+.twigetfollow {
+	display: none;
+}
+.tweet-bio {
+	display: none;
+}.twiget-tweet {
+	font-size: .9em;
+	margin: 0;
+}
+.twiget-feed {
+	max-width: 400px;
+	padding: 0;
+}
+
+
+
+
