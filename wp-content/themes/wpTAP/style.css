@@ -59,7 +59,7 @@ h5 {
 	background-position: top;
 }
 .banner-wrapper {
-	background-image: url("http://localhost/TheApplecartProject/wp-content/uploads/2014/09/tilden.jpg");
+	background-image: url("img/tilden.jpg");
 	background-repeat: repeat-x repeat-y;
 	background-size: cover;
 	margin-bottom: 40px;
